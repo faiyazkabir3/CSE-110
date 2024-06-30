@@ -1,0 +1,713 @@
+//Beginner_1
+
+ public class test {
+
+  public static void main (String[]args){
+
+
+
+  int hungry; //legal
+
+  // int 2AB ; illegal as started with a number 
+
+// int 312.2 ; illegal as started with a number 
+
+ int MOBILE; //legal
+
+// int “Ans” ; illegal as started with double quotes 
+
+int $30; // legal as $ and _  are the only valid identifiers as special characters
+
+// int Yes/No ; illegal as started with special characters
+
+// int student-id ; illegal as - is not a valid identifier 
+
+// int A+3 ; illegal as + is not a valid identifier 
+
+// int ‘X’ ;  illegal as started with quotes 
+
+// int return ; illegal as it is a reserved keyword of java
+
+}
+
+}
+
+
+
+//Beginner_2.1
+
+ public class test {
+
+  public static void main (String[]args){
+
+  int num1= 12;
+
+  System.out.print("number 1 is "+num1);
+
+}
+
+}
+
+
+
+
+
+//Beginner_2.2
+
+ public class test {
+
+  public static void main (String[]args){
+
+  int num1= 12;
+
+  int num2= 34;
+
+  int sum= num1+num2;
+
+  System.out.print("sum of number1 and number2 is "+sum);
+
+}
+
+}
+
+
+
+//Beginner_2.3
+
+ public class test {
+
+  public static void main (String[]args){
+
+  int num1= 12;
+
+  int num2= 34;
+
+  int product= num1*num2;
+
+  int division= num1/num2;
+
+  System.out.println("product of number1 and number2 is "+product);
+
+    System.out.print("division of number1 and number2 is "+division);
+
+}
+
+}
+
+
+
+
+
+//Beginner_2.4
+
+ public class test {
+
+  public static void main (String[]args){
+
+  double num1= 12;
+
+  double num2= 34;
+
+  double sum= num1+num2;
+
+  double product= num1 * num2;
+
+  double division= num1/num2;
+
+  System.out.println("sum of number1 and number2 is "+sum);
+
+  System.out.println("product of number1 and number2 is "+product);
+
+  System.out.print("division of number1 and number2 is "+division);
+
+}
+
+}
+
+
+
+//Beginner_2.5
+
+ public class test {
+
+  public static void main (String[]args){
+
+  int num1= 12;
+
+  double num2= 34;
+
+  double sum= num1+num2;
+
+  double product= num1 * num2;
+
+  double division= num1/num2;
+
+  System.out.println("sum of number1 and number2 is "+sum);
+
+  System.out.println("product of number1 and number2 is "+product);
+
+  System.out.print("division of number1 and number2 is "+division);
+
+  }
+
+ }
+
+
+
+
+
+//Beginner_2.6.1
+
+
+
+ public class test {
+
+  public static void main (String[]args){
+
+  String num1= "1";
+
+  System.out.print("number 1 is "+num1);
+
+}
+
+}
+
+
+
+
+
+//Beginner_2.6.2
+
+
+
+public class test {
+
+  public static void main (String[]args){
+
+  String num1= "1";
+
+  String num2= "2";
+
+  System.out.print("string addition is "+ (num1+num2));
+
+}
+
+}
+
+
+
+//Beginner_2.6.3
+
+
+
+ public class test {
+
+  public static void main (String[]args){
+
+  int num1= 1;
+
+  String num2= "2";
+
+  System.out.print("string addition is "+ (num1+num2));
+
+}
+
+}
+
+
+
+//Beginner_2.6.4
+
+public class test {
+
+  public static void main (String[]args){
+
+  String num1= "1";
+
+  int num2= 2;
+
+  System.out.print("string addition is "+ (num1+num2));
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Beginner_3
+
+  public class test {
+
+  public static void main (String[]args){
+
+   int radius = 4;
+
+   double area= 3.1416*radius*radius ;
+
+   double circumference= 2*3.1416*radius;
+
+    System.out.println("area of your circle is = "+area);
+
+    System.out.print("circumference of your circle is = "+circumference);
+
+     
+
+                     }
+
+                  }
+
+
+
+
+
+
+
+//Beginner_4
+
+
+
+import java.util.Scanner ;
+
+  public class test {
+
+  public static void main (String[]args){
+
+    Scanner sc = new Scanner (System.in);
+
+    System.out.print("enter your number= ");
+
+    int num1= sc.nextInt();
+
+     
+
+       int last2= num1%100;
+
+       System.out.printf(" last two digits of %d is %d  ",num1,last2);
+
+     
+
+     
+
+       
+
+                     }
+
+                  }
+
+
+
+
+
+//Beginner_5
+
+import java.util.Scanner ;
+
+  public class test {
+
+  public static void main (String[]args){
+
+    Scanner sc = new Scanner (System.in);
+
+    System.out.print("enter inch= ");
+
+    float num1= sc.nextFloat();
+
+     
+
+       float M= num1*0.0254f;
+
+       System.out.printf(" %.3f inch is equal to %.3f meters ",num1,M);
+
+     
+
+     
+
+       
+
+                     }
+
+                  }
+
+         
+
+//Intermediate_6_a
+
+  import java.util.Scanner ;
+
+  public class test {
+
+  public static void main (String[]args){
+
+    Scanner sc = new Scanner (System.in);
+
+    System.out.print("enter fisrt number= ");
+
+    float num1= sc.nextFloat();
+
+       System.out.print("enter second number= ");
+
+    float num2= sc.nextFloat();
+
+      float temp= num1;
+
+      num1 = num2;
+
+      num2 = temp;
+
+      System.out.println("first number's value is now = "+num1);
+
+       System.out.print("second number's value is now = "+num2);
+
+       
+
+                     }
+
+                  }
+
+
+
+//Intermediate_6_b
+
+  import java.util.Scanner ;
+
+  public class test {
+
+  public static void main (String[]args){
+
+    Scanner sc = new Scanner (System.in);
+
+    System.out.print("enter fisrt number= ");
+
+    float num1= sc.nextFloat();
+
+       System.out.print("enter second number= ");
+
+    float num2= sc.nextFloat();
+
+     num1= (num2*num1);
+
+     num2= num1/num2;
+
+     num1= num1/num2;
+
+     
+
+      System.out.println("first number's value is now = "+num1);
+
+       System.out.print("second number's value is now = "+num2);
+
+       
+
+                     }
+
+                  }
+
+
+
+
+
+
+
+//Intermediate_7
+
+ import java.util.Scanner ;
+
+  public class test {
+
+  public static void main (String[]args){
+
+    Scanner sc = new Scanner (System.in);
+
+    System.out.print("enter time in minute= ");
+
+    int min= sc.nextInt();
+
+       int year= min/(60*24*365);
+
+        int yearlf= min%(60*24*365);
+
+        int day= yearlf/(60*24);
+
+       System.out.printf("%d minutes is approximately %d year and %d days  ",min,year,day);
+
+       
+
+   
+
+       
+
+                     }
+
+                  }
+
+
+
+
+
+
+
+ //Intermediate_8
+
+  public class test {
+
+  public static void main (String[]args){
+
+    int a= 2;
+
+    int b= 5;
+
+    int c= 8;
+
+    int d= (2*b*(c-a)/3 +7 );
+
+    System.out.print("value of d is = " +d);
+
+  }
+
+  } 
+
+
+
+
+
+ //Intermediate_9
+
+import java.util.Scanner ;
+
+ public class test {
+
+ public static void main (String[]args){
+
+ Scanner sc = new Scanner (System.in);
+
+ System.out.print("enter n= ");
+
+ int n= sc.nextInt();
+
+ int a1= n*1;
+
+ int a2= n*2;
+
+ int a3= n*3;
+
+ int a4= n*4;
+
+ int a5= n*5;
+
+ int a6= n*6;
+
+ int a7= n*7;
+
+ int a8= n*8;
+
+ int a9= n*9;
+
+ int a10= n*10;
+
+  System.out.println(n+"X1="+a1);
+
+  System.out.println(n+"X2="+a2);
+
+  System.out.println(n+"X3="+a3);
+
+  System.out.println(n+"X4="+a4);
+
+  System.out.println(n+"X5="+a5);
+
+  System.out.println(n+"X6="+a6);
+
+  System.out.println(n+"X7="+a7);
+
+  System.out.println(n+"X8="+a8);
+
+  System.out.println(n+"X9="+a9);
+
+  System.out.println(n+"X10="+a10);
+
+
+
+    }
+
+    }
+
+
+
+
+
+
+
+
+
+//Intermediate_10
+
+import java.util.Scanner ;
+
+  public class test {
+
+  public static void main (String[]args){
+
+    Scanner sc = new Scanner (System.in);
+
+    System.out.print("enter the first term= ");
+
+    int a= sc.nextInt();
+
+    System.out.print("enter the last term= ");
+
+    int l= sc.nextInt();
+
+     System.out.print("enter the number of terms= ");
+
+    int n= sc.nextInt();
+
+    int sum = (n/2) * (a+l) ;
+
+     System.out.print("sum of the series = "+sum);
+
+
+
+         
+
+                     }
+
+                  }
+
+
+
+
+
+  //Expert_11
+
+    public class test {
+
+    public static void main (String[]args){
+
+    System.out.println("value of a is given = 4.5");
+
+    double a= 4.5; 
+
+    System.out.println("value of b is given = 9.5");
+
+    double b= 9.5; 
+
+    double c= Math.sqrt(a*a +b*b);
+
+    System.out.printf("So the value of c will be %f >according to Pythagorean theorem\n",c);
+
+    double sin_A= a/c;
+
+     double sin_B= b/c;
+
+      double cos_A= b/c;
+
+       double cos_B= a/c;
+
+       System.out.println( "sinA is equals to "+sin_A );
+
+       System.out.println(  "sinB is equals to "+sin_B );
+
+       System.out.println( "cosA is equals to "+ cos_A );
+
+       System.out.print( "cosB is equals to "+cos_B );
+
+  }
+
+  }
+
+
+
+
+
+ //Expert_12
+
+    public class test {
+
+    public static void main (String[]args){
+
+    System.out.println("Hi! I'm Faiyaz Kabir & the last 4 digits of my student ID is 1355");
+
+    int last4= 1355; 
+
+    int last1= last4%10;
+
+    int temp= last4/10 ;
+
+    int last2nd= temp%10;
+
+    System.out.println("my last digit of my id is " +last1);
+
+    System.out.println("my Second last digit of my id is " +last2nd);
+
+    System.out.println("After reversing 2 rightmost digits of my student ID, it becomes 13"+last1 +last2nd);
+
+      
+
+  }
+
+  }
+
+
+
+
+
+
+
+
+
+  //Expert_13
+
+    public class test {
+
+    public static void main (String[]args){
+
+    System.out.println("Hi! I'm Faiyaz & the last 4 digits of my student ID is 1355");
+
+    System.out.println("I have been traveling on a bike for 5 hours, 56 minutes, and 23 seconds & my total covered distance is 1355 meters");
+
+    float distanceM= 1355f;
+
+    float hour= 5;
+
+    float mintohour= (56/60.5f);
+
+    float secondtohour= (23/3600.5f);
+
+    float totaltime= (hour+ mintohour + secondtohour);
+
+    float mile= distanceM/ 1609 ;
+
+    float km= distanceM/ 1000 ;
+
+    float speedinmiles_h= (mile/totaltime);
+
+    float speedink_h= (km/totaltime);
+
+     System.out.println("time total " +totaltime );
+
+    System.out.println("my  velocity in km/h is  " +speedink_h);
+
+  System.out.println("my  velocity in miles/h is  " +speedinmiles_h);
+
+    
+
+  }
+
+  }
