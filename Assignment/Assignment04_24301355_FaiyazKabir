@@ -1,0 +1,313 @@
+
+//1
+import java.util.Scanner;
+public class test {
+ public static void main(String[]args){
+
+ int i=24;while (i>=-6) {
+ System.out.println(i);
+ i-=6;
+
+ }
+ }
+}
+
+
+//1.2
+import java.util.Scanner;
+public class test {
+ public static void main(String[]args){
+ //Scanner sc= new Scanner(System.in);
+ //int a=sc.nextInt();
+ int i=-10;
+ while (i<=20) {
+ System.out.println(i);
+ i+=5;
+}
+//System.out.println(i);
+}
+}
+
+
+//2
+import java.util.Scanner;
+public class test {
+ public static void main(String[]args){
+ Scanner sc= new Scanner(System.in);
+ System.out.print("how many number= ");//i took input
+ int a=sc.nextInt();//scanning
+int i= 1;
+ int sum=0;
+ while (i<=a) {//wow loop very cool 
+int a1=sc.nextInt();
+ sum= sum+a1;
+ i++;
+ }
+ System.out.printf("\n The sum of %d no is: %d ",a,sum);// here comes the output
+ int avg = sum/a;
+System.out.printf(" \n The Average is %d ",avg);//// here comes the output2
+
+ }
+
+}
+
+//3
+import java.util.Scanner;
+public class test {
+ public static void main(String[]args){
+ Scanner sc= new Scanner(System.in);
+
+int i= 1;
+
+ while (i>0) {
+System.out.print("\nEnter your number= ");//prompt
+int a1=sc.nextInt();//input
+if (a1>=0){
+int sq = a1*a1;//formula
+System.out.printf("\n%d^%d=%d ",a1,a1,sq);//square 
+}
+else if(a1<0) {
+    
+    System.out.print("end");
+    i--;
+}
+
+}
+ }
+
+}
+
+//4
+import java.util.Scanner;
+public class test {
+public static void main(String[]args){
+ Scanner sc= new Scanner(System.in);
+System.out.print("Enter your number= ");//prompt dilam
+ int a=sc.nextInt();
+
+ int i= 1;
+
+System.out.printf("\n Divisors of %d\n",a);
+while (i<=a) {
+if (a%i==0){
+System.out.println (i);//hmmm... ashol output
+
+}
+i++;//  post increment 
+}
+}
+
+}
+
+
+
+//5
+import java.util.Scanner ;
+public class test {
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the numbers of  integer: ");//hmmm input nisi
+        int n= sc.nextInt();
+        int poscounter = 0;
+        int negcounter =0;
+       // System.out.print(a);
+       int i=1;
+       while (i<=n){
+           System.out.print("Enter an  number:  ");//input nilam
+           int a = sc.nextInt();
+           if (a>0){
+           poscounter++;
+           i++;
+           }
+           else if (a<0){
+               negcounter++;
+               i++;
+          
+       }
+       } 
+        System.out.println(poscounter+" NON NEGATIVE NUMBERS");//output
+         System.out.println(negcounter+" Negative Numbers”);//arekta output
+       
+    
+}
+}
+
+
+//6
+import java.util.Scanner;
+public class test {
+ public static void main(String[]args){
+ Scanner sc= new Scanner(System.in);
+ System.out.print("Enter number of terms= ");//prompt
+int a=sc.nextInt();//input
+
+int i= 1;
+int sum= 0;
+int a1=1;
+
+while (i<=a) {//wow loop very cool
+
+System.out.println (a1);//print 
+sum= sum+a;
+i++;
+a1=a1+2;
+}
+System.out.printf("The Sum of odd Natural Numbers up to %d terms is: %d",a,sum);//output wow
+ }
+
+}
+
+
+//7 
+import java.util.Scanner ;
+public class test {
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int i=1;
+        int sum=0;
+       while (i<=10){
+           System.out.print("Enter number:  ");//prompt dilam 
+           int a = sc.nextInt();//input nilam
+           sum= sum+a;
+           System.out.println("Sum = "+sum);//sum ber hoche
+           i++;// post increment hoche
+           
+       
+       }
+    
+}
+}
+//8
+import java.util.Scanner;
+public class test {
+public static void main(String[]args){
+ Scanner sc= new Scanner(System.in);
+System.out.print("Enter your number= ");//prompt dilam
+ int a=sc.nextInt();
+ int i= 0;
+//System.out.printf("\n Divisors of %d\n",a);
+while (i<=a) {
+if (i%5==0 && i%3!=0){
+System.out.println (i);//hmmm... ashol output
+i++;
+}
+i++;//  post increment 
+}
+}
+
+}
+
+
+
+
+//9
+import java.util.Scanner;
+public class test {
+public static void main(String[]args){
+Scanner sc= new Scanner(System.in);
+System.out.print("Enter your number = ");
+int n=sc.nextInt();
+
+int i= 0;
+
+while (n!=0) {
+n= n/10;
+i++;
+}
+System.out.print("Total digits = "+i);
+//System.out.println("Total digits = "+n);
+
+
+}
+}
+//10
+import java.util.Scanner;
+
+public class Test {
+   public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+     System.out.print("Enter your number = ");//prompt
+  int n = sc.nextInt();//input
+int temp = n;//temp file nedded to save n's value 
+int i = 0;
+while (n != 0) {
+n = n / 10;//same as digit counter
+i++;
+}
+        i = i - 1;
+
+     //System.out.print("Total digits = "+i);
+ while (temp > 0) { // 1234
+   int v2 = (int) Math.pow(10, i);//10*3// 1
+    int digit = temp / v2;//10*3// 1
+          System.out.print(digit+ " , " );
+            temp = temp % v2;//234
+            i--;
+        }
+        
+    }
+}
+
+
+
+
+//11(a)
+import java.util.Scanner;
+public class test {
+public static void main(String[]args){
+ Scanner sc= new Scanner(System.in);
+System.out.print("Enter your number= ");//prompt dilam
+ int a=sc.nextInt();
+
+ int i= 1;
+ int dicounter=0;
+ if(a<0){
+  System.out.printf(a+" is not a prime number"); 
+  System.exit(0);//jumper seat yeyy
+ }
+while (i<=a) {
+if (a%i==0){
+dicounter++;//counter updating
+}
+i++;//  post increment 
+}
+if(dicounter==2){// prime numbers are only divisable by 2 numbers
+  System.out.printf(a+" is a prime number");  
+}
+else{
+  System.out.printf(a+" is not a prime number");     
+}
+}
+}
+
+
+//11(b)
+import java.util.Scanner;
+public class test {
+public static void main(String[]args){
+ Scanner sc= new Scanner(System.in);
+System.out.print("Enter your number= ");//prompt dilam
+ int a24=sc.nextInt();
+ if (a24<=0){
+ System.out.print(a24+" is not a perfect number");   
+ System.exit(0);//oreh baba arekta jumper seat
+ }
+int sum=0;
+ int i= 1;
+while (i<a24) {
+if (a24%i==0){
+sum=sum+i;
+}
+i++;//  post increment 
+}
+if (sum==a24){//A number is said to be a perfect number if the sum of its divisors, including 1 but not the number itself is equal to that number
+    System.out.println (a24+" is a perfect number");
+}
+else {
+       System.out.println (a24+" is not a perfect number");
+ 
+}
+}
+}
+
+

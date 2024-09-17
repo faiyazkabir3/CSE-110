@@ -1,0 +1,191 @@
+//1
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of prime numbers= ");
+        int N = sc.nextInt();
+        int primeCount = 0;
+        int num = 2;
+        while (primeCount < N){
+            int divisors = 0; 
+            for (int i = 1; i <= num; i++){
+              if (num % i == 0){
+              divisors++;
+              }
+            }
+            if (divisors == 2){
+                System.out.print(num + " ");
+                primeCount++;
+            }
+            num++;
+        }
+    }
+}
+//2
+import java.util.Scanner;
+class test2 {
+    public static void main(String[] args) {
+         Scanner sc = new Scanner(System.in);
+         System.out.println("enter value of N(where N>0)= ");
+          int n = sc.nextInt();
+          int sum=0;
+          int y=0;
+          for(int i=1;i<=n;i++){//outer loop
+              for(int j=1;j<=i;j++){//inner loop
+                  sum=sum+j;
+                 
+              }
+               y=-sum;//as there is minus in the equation
+          }
+         System.out.println("The value of y:"+y);
+    }
+}
+//3
+import java.util.Scanner;
+class test3 {
+    public static void main(String[] args) {
+         Scanner sc = new Scanner(System.in);
+         int count=0;
+         while (true){
+          System.out.println("enter value of N(where N>0 and even)= ");
+           count=0;//couunter reseter
+          int num = sc.nextInt();
+          if (num%2==0 || num>8){
+              for(int i=1;i<=num;i++){
+                  //int count=0;
+                  if(num%i==0){
+                      count++;//post increament
+                  }
+              }
+          }
+          else{
+              break;
+          }
+           System.out.printf("%d has %d divisors\n",num,count);  
+         }
+        
+         
+         
+}
+}
+
+//4
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+            System.out.print("enter the value of x= ");//22
+            int x = sc.nextInt();//user input
+            System.out.print("enter the value of y= ");//3
+            int y = sc.nextInt();
+            int sum=0;
+            int count=0;
+            if(x%2==0){//odd even checker
+                x++;
+            }
+            for(int j=0;count<y;j++){
+                sum=sum+x;//summation of odd numbers
+                x=x+2;//odd
+                count++;
+            }
+            System.out.print("sum is "+sum);
+    }
+}
+            
+//5
+import java.util.Scanner;
+public class loop{
+  public static void main(String[]args){
+    Scanner sc = new Scanner(System.in); 
+     System.out.print("input row= ");
+      int num = sc.nextInt();
+      System.out.print("input column= ");
+      int row = sc.nextInt();
+    for(int i=1;i<=row;i++){
+      for (int j=1;j<=num;j++){
+        System.out.print(j+(" "));
+      }
+      System.out.println();
+    }
+  }
+}
+
+
+//6 
+import java.util.Scanner;
+public class loop{
+  public static void main(String[]args){
+    Scanner sc = new Scanner(System.in); 
+    System.out.print("enter height=  ");
+    int num = sc.nextInt();
+    for(int i=1;i<=num;i++){
+      for (int j=num;j>=i;j--){
+        System.out.print(" ");
+      }
+      for(int k=1;k<=i;k++){
+          System.out.print(k);
+    }
+       System.out.println();
+  }
+}
+}
+
+
+//7 
+import java.util.Scanner;
+public class loop{
+  public static void main(String[]args){
+    Scanner sc = new Scanner(System.in); 
+    System.out.print("enter height=  ");
+    int num = sc.nextInt();
+    int count=1;
+    for(int i=1;i<=num;i++){
+      for (int j=num;j>=i;j--){
+        System.out.print(" ");
+      }
+      for(int k=1;k<=count;k++){
+          System.out.print(k);
+    }
+       System.out.println();
+       count+=2;
+  }
+}
+}
+
+//8
+import java.util.Scanner;
+class test8 {
+    public static void main(String[] args) {
+     Scanner sc = new Scanner(System.in);
+     System.out.print("enter starting number= ");
+      int start= sc.nextInt();
+      System.out.print("enter ending number= ");
+      int ending= sc.nextInt();
+       System.out.println("Armstrong numbers are : ");
+       for(int i=start;i<=ending;i++) {
+           int counter =0;
+           int digit=0;
+           int sum=0;
+           int number=i;
+          while (number>0){
+              number=number/10;
+              counter++;
+          }
+          number=i;
+          while(number>0){
+            digit= number%10;
+            sum+= Math.pow(digit,counter);
+            number=number/10;
+          }
+               
+       if (sum ==i){
+            System.out.println(i);
+            
+          }
+       
+          }
+       }
+       
+       }
+          
